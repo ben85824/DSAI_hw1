@@ -3,7 +3,6 @@ import os
 from train_data_generator import get_train_data, load_csv
 from keras.models import Sequential, Model
 from keras.layers import LSTM, Dense, Input, BatchNormalization, MaxPool1D, Conv2D, Conv1D
-os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 def new_model():
     # encoder
     encoder_inputs = Input(shape=(14,8))
